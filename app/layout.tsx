@@ -15,17 +15,6 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="bg-black text-white">
-        {/* 상단 네비게이션 바 (메뉴) */}
-        <header className="flex justify-between items-center p-6 border-b border-gray-800">
-          <div className="text-2xl font-black tracking-tighter cursor-pointer">VERO</div>
-          <nav className="flex gap-8 text-sm font-bold text-gray-400">
-            <span className="hover:text-white cursor-pointer transition-colors">SHOP</span>
-            <span className="hover:text-white cursor-pointer transition-colors">LOGIN</span>
-            <span className="hover:text-white cursor-pointer transition-colors">CART (0)</span>
-          </nav>
-        </header>
-        
-        {/* 아까 만든 page.tsx 내용이 쏙 들어오는 자리입니다 */}
         {children}
       </body>
     </html>
